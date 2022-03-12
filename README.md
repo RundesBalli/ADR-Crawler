@@ -8,6 +8,7 @@ sudo apt install php-cli php-curl
 mv config.template.php config.php
 nano config.php
 ```
+After that import the .sql file into your selected database of your choice.
 
 ## Cronjob
 Set up a cronjob that runs the crawler 1x per hour at quarter past the hour:
