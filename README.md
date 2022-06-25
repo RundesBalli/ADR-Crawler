@@ -2,7 +2,7 @@
 Ambient dose rate crawler to fetch the ambient dose rate of around 1700 measurement stations in Germany and around 110 measurement stations in Austria.
 
 ## Setup / Requirements
-This crawlers are written in PHP, use a SQL database and are used in CLI-Mode with cURL. Install requirements and rename the `config.template.php` to `config.php` in the respective directorys and fill in the variables.
+These crawlers are written in PHP, use a SQL database and are used in CLI-Mode with cURL. Install requirements and rename the `config.template.php` to `config.php` in the respective directorys and fill in the variables.
 ```
 sudo apt install php-cli php-curl
 cd <de or at>
