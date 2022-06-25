@@ -1,10 +1,11 @@
 # :radioactive: :clipboard: ADR-Crawler
-Ambient dose rate crawler to fetch the ambient dose rate of around 1700 measurement points in Germany.
+Ambient dose rate crawler to fetch the ambient dose rate of around 1700 measurement stations in Germany and around 110 measurement stations in Austria.
 
 ## Setup / Requirements
-This crawler is written in PHP, uses a SQL database and is used in CLI-Mode with cURL. Install requirements and rename the `config.template.php` in `config.php` and fill in the variables.
+This crawlers are written in PHP, use a SQL database and are used in CLI-Mode with cURL. Install requirements and rename the `config.template.php` to `config.php` in the respective directorys and fill in the variables.
 ```
 sudo apt install php-cli php-curl
+cd <de or at>
 mv config.template.php config.php
 nano config.php
 ```
@@ -18,6 +19,6 @@ crontab -e
 15 * * * * /usr/bin/php /path/to/adr/crawler.php > /dev/null
 ```
 
-### Informations
+### Informations to the German data
 The data collected by this crawler falls under certain terms of use, which can be viewed [here](https://www.imis.bfs.de/geoportal/resources/sitepolicy.html).  
 <sub>I explicitly distance myself from the Federal Office for Radiation Protection of Germany and explicitly point out that this is neither official software nor provided by the Federal Office for Radiation Protection of Germany. I act as an interested, non-expert private person.</sub>
